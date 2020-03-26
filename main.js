@@ -6,24 +6,15 @@
 
 
 
-var fizz = "Fizz";
-var buzz = "Buzz";
-var fizzbuzz = "FizzBuzz";
-
-
 for (var i = 1; i <= 100; i++) {  // Numeri da 1 a 100
 
   if ((i % 3 === 0) && (i % 5 === 0)) {   //Stampa i multipli sia di 3 che di 5
-    console.log(fizzbuzz);
-  }
-  else if (i % 3 === 0) {                 //Stampa i multipli solo di 3
-   console.log(fizz);
-  }
-   else if (i % 5 === 0) {                //Stampa i multipli solo di 5
-   console.log(buzz);
-   }
-
-   else {                                 //Stampa tutti gli altri
-     console.log(i);
+  console.log("FizzBuzz");
+  } else if (i % 3 === 0) {                 //Stampa i multipli solo di 3
+   console.log("Fizz");
+  } else if (i % 5 === 0) {                //Stampa i multipli solo di 5
+   console.log("Buzz");
+   } else {                                 //Stampa tutti gli altri
+    console.log(i);
    }
 }
